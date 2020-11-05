@@ -1,0 +1,14 @@
+<template>
+  <h1>${message}</h1>
+  <div style="margin-left: 50px;">
+    <p style="color: red;"> ${countryNameAndCapitalName}</p>
+  </div>
+  <div style="margin-left: 20px;">
+    <ul>
+      <li repeat.for="country of countries">
+        <p click.delegate="showCapitalName(country)">${country.name}</p>
+      </li>
+    </ul>
+  </div>
+
+</template>
